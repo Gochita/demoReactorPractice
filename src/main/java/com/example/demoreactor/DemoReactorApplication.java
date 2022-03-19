@@ -1,16 +1,15 @@
 package com.example.demoreactor;
 
+import combinacion.Combinacion;
 import filtrado.Filtrado;
 import io.reactivex.Observable;
 import model.Persona;
-import operador.creacion.Creacion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import transformacion.Transformacion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -68,8 +67,8 @@ public class DemoReactorApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoReactorApplication.class, args);
-        Filtrado app = new Filtrado();
-        app.skipLast();
+        Combinacion app = new Combinacion();
+        app.zipWith();
     }
 
 }

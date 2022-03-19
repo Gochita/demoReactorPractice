@@ -2,6 +2,7 @@ package com.example.demoreactor;
 
 import io.reactivex.Observable;
 import model.Persona;
+import operador.creacion.Creacion;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -65,9 +66,8 @@ public class DemoReactorApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoReactorApplication.class, args);
-        fluxMono();
-        // mono();
-        //flux();
+        Creacion app = new Creacion();
+        app.repeat();
     }
 
 }

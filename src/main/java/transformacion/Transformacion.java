@@ -18,7 +18,7 @@ public class Transformacion {
     public void map() {
         List<Persona> personas = new ArrayList<>();
         personas.add(new Persona(1, "vicci", 40));
-        personas.add(new Persona(2, "evelyn", 33));
+        personas.add(new Persona(2, "evelyn", 20));
         personas.add(new Persona(3, "eleonora", 70));
 
 

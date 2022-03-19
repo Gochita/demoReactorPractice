@@ -1,5 +1,6 @@
 package com.example.demoreactor;
 
+import filtrado.Filtrado;
 import io.reactivex.Observable;
 import model.Persona;
 import operador.creacion.Creacion;
@@ -67,8 +68,8 @@ public class DemoReactorApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoReactorApplication.class, args);
-        Transformacion app = new Transformacion();
-        app.groupBy();
+        Filtrado app = new Filtrado();
+        app.skipLast();
     }
 
 }

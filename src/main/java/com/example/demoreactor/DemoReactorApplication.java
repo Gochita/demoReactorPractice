@@ -1,6 +1,7 @@
 package com.example.demoreactor;
 
 import combinacion.Combinacion;
+import error.ErrorOp;
 import filtrado.Filtrado;
 import io.reactivex.Observable;
 import model.Persona;
@@ -67,8 +68,8 @@ public class DemoReactorApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoReactorApplication.class, args);
-        Combinacion app = new Combinacion();
-        app.zipWith();
+        ErrorOp app = new ErrorOp();
+        app.errorMap();
     }
 
 }

@@ -9,6 +9,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
+import transformacion.Transformacion;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -66,8 +67,8 @@ public class DemoReactorApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoReactorApplication.class, args);
-        Creacion app = new Creacion();
-        app.repeat();
+        Transformacion app = new Transformacion();
+        app.groupBy();
     }
 
 }

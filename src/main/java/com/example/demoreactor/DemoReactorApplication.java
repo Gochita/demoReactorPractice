@@ -1,6 +1,7 @@
 package com.example.demoreactor;
 
 import combinacion.Combinacion;
+import condicional.Condicional;
 import error.ErrorOp;
 import filtrado.Filtrado;
 import io.reactivex.Observable;
@@ -68,8 +69,8 @@ public class DemoReactorApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoReactorApplication.class, args);
-        ErrorOp app = new ErrorOp();
-        app.errorMap();
+        Condicional app = new Condicional();
+        app.takeUntil();
     }
 
 }

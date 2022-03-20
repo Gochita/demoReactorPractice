@@ -52,7 +52,7 @@ public class Condicional {
         /*
 
             Si el delayElements durara menos de lo que dura el timeout, no habría error
-            
+
          */
 
 

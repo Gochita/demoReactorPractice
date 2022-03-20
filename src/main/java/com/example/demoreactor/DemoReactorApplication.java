@@ -5,6 +5,7 @@ import condicional.Condicional;
 import error.ErrorOp;
 import filtrado.Filtrado;
 import io.reactivex.Observable;
+import matematico.Matematico;
 import model.Persona;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -69,8 +70,8 @@ public class DemoReactorApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoReactorApplication.class, args);
-        Condicional app = new Condicional();
-        app.takeUntil();
+        Matematico app = new Matematico();
+        app.summarizing();
     }
 
 }
